@@ -21,7 +21,7 @@ Step 3.) Updating and Securing the EC2 Instance.
 Step 4.) Configuring a Firewall with Security Groups
 1.	Minimized Terminal, navigated to the AWS Management Console -> EC2 Dashboard -> Instances, and selected the batcomputer EC2 instance.
 2.	Clicked on the batcomputer’s Security tab and clicked on the security group associated with the instance.
-3.	Edited the security group's inbound rules by creating a rule named “SecuredSSH” which allows access only from my IP address.
+3.	Edited the security group's inbound rules by creating a rule named "SecuredSSH" which allows access only from my IP address.
 4.	Successfully configured a security group to restrict SSH access to my IP only.
 
 Step 5.) Configuring CloudWatch for Monitoring
@@ -30,7 +30,7 @@ Step 5.) Configuring CloudWatch for Monitoring
 3.	Configured the alarm with a static threshold type, a 5-minute period, and an alarm condition that gets triggered if the batcomputer’s CPU utilization surpasses 80%.
 4.	Created an SNS topic to send email alerts to me if the CPU utilization metric falls outside of the defined threshold.
 
-Section 1 Summary: In this section, I successfully launched and connected to an Amazon EC2 Instance. I implemented security hardening by disabling root logins, enforcing key-based authentication, and restricting SSH connections using Security Groups. I also configured CloudWatch to monitor the instance’s CPU utilization, using SNS to notify me if utilization surpasses 80%. I gained hands-on experience in establishing, securing, and monitoring a cloud infrastructure.
+**Section 1 Summary**: In this section, I successfully launched and connected to an Amazon EC2 Instance. I implemented security hardening by disabling root logins, enforcing key-based authentication, and restricting SSH connections using Security Groups. I also configured CloudWatch to monitor the instance’s CPU utilization, using SNS to notify me if utilization surpasses 80%. I gained hands-on experience in establishing, securing, and monitoring a cloud infrastructure.
 
 
 ## Section 2: Securing Data in S3 Buckets
@@ -59,6 +59,6 @@ Step 5.) Setting Up Access Logs for S3
 3.	I enabled access logging and specified the destination for the batcomputer-secret-logs bucket, which will make it serve as the target bucket for storing logs.
 4.	By implementing access logging, every r/w request to the batcomputer-secret-data bucket will generate a log entry, which will then be stored in the batcomputer-secret-logs bucket.
 
-Section 2 Summary: In this section, I successfully created an S3 bucket with versioning and server-side encryption enabled. I implemented bucket policies to enforce least privilege access and configured server access logs to monitor activity. This provided me with hands-on experience in securing cloud storage and applying data protection best practices.
+**Section 2 Summary**: In this section, I successfully created an S3 bucket with versioning and server-side encryption enabled. I implemented bucket policies to enforce least privilege access and configured server access logs to monitor activity. This provided me with hands-on experience in securing cloud storage and applying data protection best practices.
 
 
