@@ -7,6 +7,8 @@ Step 1.) Launching an EC2 Instance
 3.	Configured Security Group (firewall) to allow SSH from my IP address and created an RSA key pair.
 4.	Launched the EC2 instance.
 
+![Figure 1: Creating an EC2 Instance](screenshots/aws_createdEC2.png)
+
 Step 2.) Connecting to the EC2 Instance
 1.	Opened the terminal and navigated to the directory where the key pair is stored.
 2.	Using terminal, I ran a command to SSH into the batcomputer EC2 instance.
